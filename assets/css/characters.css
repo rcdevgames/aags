@@ -1,0 +1,116 @@
+#character-creation-container {
+	position: relative;
+}
+
+#character-creation-container #character-data {
+	margin-bottom: 20px;
+}
+
+#character-creation-container #anime-list, #character-creation-container #anime-character-list {
+	position: relative;
+	display: block;
+}
+
+#anime-list .anime, #anime-character-list .character, #select-player-list-container .player {
+	cursor: pointer;
+	opacity: .3;
+	transition:All 0.3s linear;
+	-webkit-transition:All 0.3s linear;
+	-moz-transition:All 0.3s linear;
+	-o-transition:All 0.3s linear;
+}
+
+#anime-list .anime:hover, #anime-character-list .character:hover, #select-player-list-container .player:hover {
+	opacity: 1;
+}
+
+#character-creation-container .selected, #select-player-list-container .selected {
+	opacity: 1 !important;
+}
+
+#anime-list .anime {
+	float: left;
+	position: relative;
+	padding: 5px;	
+}
+
+#anime-character-list .character {
+	float: left;
+	position: relative;
+	padding: 1px;
+}
+
+#popup-character-images .image {
+	display: block;
+	float: left;
+	padding-left: 15px;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+
+#popup-character-themes {
+	height: 750px;
+	position: relative;
+	width: 730px;
+	margin: 0px auto;
+	background-repeat: no-repeat;
+	background-image: url(../images/backgrounds/none.jpg)
+}
+
+#popup-character-themes #theme-list, #popup-character-themes .theme-images {
+	position: absolute;
+	bottom: 20px
+}
+
+#popup-character-themes .barra-secao {
+	bottom: 301px;
+	position: absolute;
+}
+
+#popup-character-themes #bar-images {
+	display: none;
+}
+
+#popup-character-themes .attack-list {
+	width: 300px;
+	position: absolute;
+	margin-left: 34px;
+	margin-top: 160px;
+	display: none
+}
+
+#popup-character-themes #theme-list .card img {
+	cursor: pointer;
+}
+
+#popup-character-themes .ability-list {
+	position: absolute;
+	margin-top: 344px;
+	margin-left: 122px;
+	display: none
+}
+
+#popup-character-themes .attack {
+	float: left;
+	margin: 2px
+}
+
+#popup-character-themes .theme {
+	text-align: center;
+}
+
+#popup-character-themes .theme .btn {
+	margin-top: -30px;
+}
+
+#popup-character-themes .theme-images {
+	display: none
+}
+
+#popup-character-themes .theme-controls {
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: -55px;
+	right: 0px;
+	display: none
+}

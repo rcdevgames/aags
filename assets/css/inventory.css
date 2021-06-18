@@ -1,0 +1,33 @@
+#inventory-trigger.shown {
+	background-color: rgba(0, 0, 0, .85);
+}
+
+#inventory-container {
+	display: none;
+	width: 244px;
+	/*height: 200px;*/
+	overflow: auto;
+	background-color: rgba(0, 0, 0, .85);
+	padding: 10px;
+	margin-left: -163px;
+}
+
+#inventory-container.shown {
+	display: block
+}
+
+#inventory-container .item {
+	float: left;
+	width: 56px;
+	height: 56px;
+	position: relative;
+}
+
+#inventory-container .quantity {
+	background-color: #000;
+	color: #FFF;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 4px;
+}

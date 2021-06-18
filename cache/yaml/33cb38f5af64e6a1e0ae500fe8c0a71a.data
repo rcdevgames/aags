@@ -1,0 +1,660 @@
+a:1:{i:1;a:661:{s:35:"effects.kill_with_one_hit.buff.self";s:101:"se matar ao usar essa habilidade. <span class="vermelho">( Falhando fará um golpe poderoso )</span>
+";s:36:"effects.kill_with_one_hit.buff.enemy";s:101:"se matar ao usar essa habilidade. <span class="vermelho">( Falhando fará um golpe poderoso )</span>
+";s:37:"effects.kill_with_one_hit.debuff.self";s:108:"matar o inimigo ao usar essa habilidade. <span class="vermelho">( Falhando fará um golpe poderoso )</span>
+";s:38:"effects.kill_with_one_hit.debuff.enemy";s:108:"matar o inimigo ao usar essa habilidade. <span class="vermelho">( Falhando fará um golpe poderoso )</span>
+";s:35:"effects.cancel_regen_mana.buff.self";s:37:"cancelar a sua regeneração de mana
+";s:36:"effects.cancel_regen_mana.buff.enemy";s:37:"cancelar a sua regeneração de mana
+";s:37:"effects.cancel_regen_mana.debuff.self";s:44:"cancelar a regeneração de mana do inimigo
+";s:38:"effects.cancel_regen_mana.debuff.enemy";s:44:"cancelar a regeneração de mana do inimigo
+";s:29:"effects.remove_mana.buff.self";s:43:"remover #{value} de mana do seu personagem
+";s:30:"effects.remove_mana.buff.enemy";s:43:"remover #{value} de mana do seu personagem
+";s:31:"effects.remove_mana.debuff.self";s:36:"remover #{value} de mana do inimigo
+";s:32:"effects.remove_mana.debuff.enemy";s:36:"remover #{value} de mana do inimigo
+";s:28:"effects.steal_mana.buff.self";s:58:"remover #{value} de mana de você e passar para o inimigo
+";s:29:"effects.steal_mana.buff.enemy";s:58:"remover #{value} de mana de você e passar para o inimigo
+";s:30:"effects.steal_mana.debuff.self";s:57:"remover #{value} de mana do inimigo e passar para você.
+";s:31:"effects.steal_mana.debuff.enemy";s:57:"remover #{value} de mana do inimigo e passar para você.
+";s:30:"effects.steal_health.buff.self";s:43:"recuperar #{value} de vida do dano causado
+";s:31:"effects.steal_health.buff.enemy";s:43:"recuperar #{value} de vida do dano causado
+";s:32:"effects.steal_health.debuff.self";s:40:"perder #{value} de vida do dano causado
+";s:33:"effects.steal_health.debuff.enemy";s:40:"perder #{value} de vida do dano causado
+";s:13:"effects.turns";s:22:"por #{turns} turno(s)
+";s:15:"effects.instant";s:15:"no turno atual
+";s:14:"effects.chance";s:56:"<span class="effect_gray">#{value}% de chance de</span>
+";s:26:"effects.bleeding.buff.self";s:68:"causar sangramento em você mesmo, aplicando #{value} de dano extra
+";s:27:"effects.bleeding.buff.enemy";s:64:"causar sangramento no inimigo, aplicando #{value} de dano extra
+";s:28:"effects.bleeding.debuff.self";s:68:"causar sangramento em você mesmo, aplicando #{value} de dano extra
+";s:29:"effects.bleeding.debuff.enemy";s:64:"causar sangramento no inimigo, aplicando #{value} de dano extra
+";s:22:"effects.stun.buff.self";s:57:"atordoar você mesmo, você não ataca no próximo turno
+";s:23:"effects.stun.buff.enemy";s:53:"atordoar o inimigo, ele não ataca no próximo turno
+";s:24:"effects.stun.debuff.self";s:57:"atordoar você mesmo, você não ataca no próximo turno
+";s:25:"effects.stun.debuff.enemy";s:53:"atordoar o inimigo, ele não ataca no próximo turno
+";s:26:"effects.slowness.buff.self";s:115:"causar lentidão em você mesmo, os golpes dele ficam #{value} mais lentos e o tempo de recarga aumenta em 1 turno
+";s:27:"effects.slowness.buff.enemy";s:111:"causar lentidão no inimigo, os golpes dele ficam #{value} mais lentos e o tempo de recarga aumenta em 1 turno
+";s:28:"effects.slowness.debuff.self";s:112:"causar lentidão em você mesmo, seus golpes ficam #{value} mais lentos e o tempo de recarga aumenta em 1 turno
+";s:29:"effects.slowness.debuff.enemy";s:111:"causar lentidão no inimigo, os golpes dele ficam #{value} mais lentos e o tempo de recarga aumenta em 1 turno
+";s:27:"effects.confusion.buff.self";s:76:"causar confusão em você mesmo, reduzindo sua chance de acerto em #{value}
+";s:28:"effects.confusion.buff.enemy";s:72:"causar confusão no inimigo, reduzindo sua chance de acerto em #{value}
+";s:29:"effects.confusion.debuff.self";s:76:"causar confusão em você mesmo, reduzindo sua chance de acerto em #{value}
+";s:30:"effects.confusion.debuff.enemy";s:72:"causar confusão no inimigo, reduzindo sua chance de acerto em #{value}
+";s:34:"effects.elemental_damage.buff.self";s:38:"aumentar em #{value} o dano Elemental
+";s:35:"effects.elemental_damage.buff.enemy";s:49:"aumentar em #{value} o dano Elemental do inimigo
+";s:36:"effects.elemental_damage.debuff.self";s:38:"aumentar em #{value} o dano Elemental
+";s:37:"effects.elemental_damage.debuff.enemy";s:49:"diminuir em #{value} o dano Elemental do inimigo
+";s:32:"effects.fighter_damage.buff.self";s:42:"aumentar em #{value} o dano Corpo-a-Corpo
+";s:33:"effects.fighter_damage.buff.enemy";s:53:"aumentar em #{value} o dano Corpo-a-Corpo do inimigo
+";s:34:"effects.fighter_damage.debuff.self";s:42:"aumentar em #{value} o dano Corpo-a-Corpo
+";s:35:"effects.fighter_damage.debuff.enemy";s:53:"diminuir em #{value} o dano Corpo-a-Corpo do inimigo
+";s:30:"effects.magic_damage.buff.self";s:36:"aumentar em #{value} o dano Mágico
+";s:31:"effects.magic_damage.buff.enemy";s:47:"aumentar em #{value} o dano Mágico do inimigo
+";s:32:"effects.magic_damage.debuff.self";s:36:"aumentar em #{value} o dano Mágico
+";s:33:"effects.magic_damage.debuff.enemy";s:47:"diminuir em #{value} o dano Mágico do inimigo
+";s:32:"effects.warrior_damage.buff.self";s:38:"aumentar em #{value} o dano Guerreiro
+";s:33:"effects.warrior_damage.buff.enemy";s:49:"aumentar em #{value} o dano Guerreiro do inimigo
+";s:34:"effects.warrior_damage.debuff.self";s:38:"aumentar em #{value} o dano Guerreiro
+";s:35:"effects.warrior_damage.debuff.enemy";s:49:"diminuir em #{value} o dano Guerreiro do inimigo
+";s:31:"effects.ranger_damage.buff.self";s:37:"aumentar em #{value} o dano Atirador
+";s:32:"effects.ranger_damage.buff.enemy";s:48:"aumentar em #{value} o dano Atirador do inimigo
+";s:33:"effects.ranger_damage.debuff.self";s:37:"aumentar em #{value} o dano Atirador
+";s:34:"effects.ranger_damage.debuff.enemy";s:48:"diminuir em #{value} o dano Atirador do inimigo
+";s:40:"effects.reduce_critical_damage.buff.self";s:41:"diminuir pela metade o seu dano Crítico
+";s:41:"effects.reduce_critical_damage.buff.enemy";s:48:"diminuir pela metade o dano Crítico do inimigo
+";s:42:"effects.reduce_critical_damage.debuff.self";s:41:"diminuir pela metade o seu dano Crítico
+";s:43:"effects.reduce_critical_damage.debuff.enemy";s:48:"diminuir pela metade o dano Crítico do inimigo
+";s:40:"effects.enemy_absorb_reduction.buff.self";s:42:"diminuir pela metade o seu dano Absorvido
+";s:41:"effects.enemy_absorb_reduction.buff.enemy";s:49:"diminuir pela metade o dano Absorvido do inimigo
+";s:42:"effects.enemy_absorb_reduction.debuff.self";s:42:"diminuir pela metade o seu dano Absorvido
+";s:43:"effects.enemy_absorb_reduction.debuff.enemy";s:49:"diminuir pela metade o dano Absorvido do inimigo
+";s:36:"effects.damage_in_bleeding.buff.self";s:80:"aumentar em #{value} o dano causado quando seu oponente estiver com sangramento
+";s:37:"effects.damage_in_bleeding.buff.enemy";s:80:"aumentar em #{value} o dano causado quando seu oponente estiver com sangramento
+";s:38:"effects.damage_in_bleeding.debuff.self";s:80:"diminuir em #{value} o dano causado quando seu oponente estiver com sangramento
+";s:39:"effects.damage_in_bleeding.debuff.enemy";s:80:"diminuir em #{value} o dano causado quando seu oponente estiver com sangramento
+";s:36:"effects.damage_in_slowness.buff.self";s:78:"aumentar em #{value} o dano causado quando seu oponente estiver com lentidão
+";s:37:"effects.damage_in_slowness.buff.enemy";s:78:"aumentar em #{value} o dano causado quando seu oponente estiver com lentidão
+";s:38:"effects.damage_in_slowness.debuff.self";s:78:"diminuir em #{value} o dano causado quando seu oponente estiver com lentidão
+";s:39:"effects.damage_in_slowness.debuff.enemy";s:78:"diminuir em #{value} o dano causado quando seu oponente estiver com lentidão
+";s:37:"effects.damage_in_confusion.buff.self";s:78:"aumentar em #{value} o dano causado quando seu oponente estiver com confusão
+";s:38:"effects.damage_in_confusion.buff.enemy";s:78:"aumentar em #{value} o dano causado quando seu oponente estiver com confusão
+";s:39:"effects.damage_in_confusion.debuff.self";s:78:"diminuir em #{value} o dano causado quando seu oponente estiver com confusão
+";s:40:"effects.damage_in_confusion.debuff.enemy";s:78:"diminuir em #{value} o dano causado quando seu oponente estiver com confusão
+";s:32:"effects.damage_in_stun.buff.self";s:62:"Aumenta em #{value} o seu dano causado em inimigos Atordoados
+";s:33:"effects.damage_in_stun.buff.enemy";s:79:"Aumenta em #{value} o dano do inimigo causado enquanto você estiver Atordoado
+";s:34:"effects.damage_in_stun.debuff.self";s:62:"Diminui em #{value} o seu dano causado em inimigos Atordoados
+";s:35:"effects.damage_in_stun.debuff.enemy";s:79:"Diminui em #{value} o dano do inimigo causado enquanto você estiver Atordoado
+";s:42:"effects.increase_bleeding_damage.buff.self";s:48:"aumentar em #{value} o dano de seu sangramento 
+";s:43:"effects.increase_bleeding_damage.buff.enemy";s:54:"aumentar em #{value} o dano do sangramento no inimigo
+";s:44:"effects.increase_bleeding_damage.debuff.self";s:47:"diminuir em #{value} o dano de seu sangramento
+";s:45:"effects.increase_bleeding_damage.debuff.enemy";s:54:"diminuir em #{value} o dano do sangramento no inimigo
+";s:39:"effects.generic_attack_damage.buff.self";s:61:"aumentar em #{value}% o dano do seu próximo golpe genérico
+";s:40:"effects.generic_attack_damage.buff.enemy";s:68:"aumentar em #{value}% o dano do próximo golpe genérico do inimigo
+";s:41:"effects.generic_attack_damage.debuff.self";s:61:"diminuir em #{value}% o dano do seu próximo golpe genérico
+";s:42:"effects.generic_attack_damage.debuff.enemy";s:68:"diminuir em #{value}% o dano do próximo golpe genérico do inimigo
+";s:34:"effects.attack_half_life.buff.self";s:72:"aumentar em #{value} o seu ataque quando sua vida estiver abaixo de 50%
+";s:35:"effects.attack_half_life.buff.enemy";s:79:"aumentar em #{value} o ataque do inimigo quando sua vida estiver abaixo de 50%
+";s:36:"effects.attack_half_life.debuff.self";s:72:"diminuir em #{value} o seu ataque quando sua vida estiver abaixo de 50%
+";s:37:"effects.attack_half_life.debuff.enemy";s:79:"diminuir em #{value} o ataque do inimigo quando sua vida estiver abaixo de 50%
+";s:35:"effects.defense_half_life.buff.self";s:72:"aumentar em #{value} a sua defesa quando sua vida estiver abaixo de 50%
+";s:36:"effects.defense_half_life.buff.enemy";s:79:"aumentar em #{value} a defesa do inimigo quando sua vida estiver abaixo de 50%
+";s:37:"effects.defense_half_life.debuff.self";s:72:"diminuir em #{value} a sua defesa quando sua vida estiver abaixo de 50%
+";s:38:"effects.defense_half_life.debuff.enemy";s:79:"diminuir em #{value} a defesa do inimigo quando sua vida estiver abaixo de 50%
+";s:38:"effects.unique_attack_damage.buff.self";s:58:"aumentar em #{value}% o dano do seu próximo golpe único
+";s:39:"effects.unique_attack_damage.buff.enemy";s:64:"umentar em #{value}% o dano do próximo golpe único do inimigo
+";s:40:"effects.unique_attack_damage.debuff.self";s:58:"diminuir em #{value}% o dano do seu próximo golpe único
+";s:41:"effects.unique_attack_damage.debuff.enemy";s:65:"diminuir em #{value}% o dano do próximo golpe único do inimigo
+";s:25:"effects.for_atk.buff.self";s:35:"aumentar em #{value} o seu ataque 
+";s:26:"effects.for_atk.buff.enemy";s:41:"aumentar em #{value} o ataque do inimigo
+";s:27:"effects.for_atk.debuff.self";s:34:"diminuir o seu ataque em #{value}
+";s:28:"effects.for_atk.debuff.enemy";s:39:"diminuir #{value} do ataque do inimigo
+";s:25:"effects.for_def.buff.self";s:34:"aumentar em #{value} a sua defesa
+";s:26:"effects.for_def.buff.enemy";s:41:"aumentar em #{value} a defesa do inimigo
+";s:27:"effects.for_def.debuff.self";s:34:"diminuir a sua defesa em #{value}
+";s:28:"effects.for_def.debuff.enemy";s:39:"diminuir #{value} do defesa do inimigo
+";s:26:"effects.for_crit.buff.self";s:37:"aumentar em #{value}% o seu crítico
+";s:27:"effects.for_crit.buff.enemy";s:44:"aumentar em #{value}% o crítico do inimigo
+";s:28:"effects.for_crit.debuff.self";s:37:"diminuir o seu crítico em #{value}%
+";s:29:"effects.for_crit.debuff.enemy";s:42:"diminuir #{value}% do crítico do inimigo
+";s:30:"effects.for_crit_inc.buff.self";s:42:"aumentar em #{value}% o seu dano crítico
+";s:31:"effects.for_crit_inc.buff.enemy";s:49:"aumentar em #{value}% o dano crítico do inimigo
+";s:32:"effects.for_crit_inc.debuff.self";s:40:"diminuir o seu dano critico em #{value}
+";s:33:"effects.for_crit_inc.debuff.enemy";s:45:"diminuir #{value} do dano critico do inimigo
+";s:25:"effects.for_abs.buff.self";s:39:"aumentar em #{value}% a sua absorção
+";s:26:"effects.for_abs.buff.enemy";s:46:"aumentar em #{value}% a absorção do inimigo
+";s:27:"effects.for_abs.debuff.self";s:39:"diminuir a sua absorção em #{value}%
+";s:28:"effects.for_abs.debuff.enemy";s:44:"diminuir #{value}% da absorção do inimigo
+";s:29:"effects.for_abs_inc.buff.self";s:43:"aumentar em #{value}% o seu dano absorvido
+";s:30:"effects.for_abs_inc.buff.enemy";s:50:"aumentar em #{value}% o dano absorvido do inimigo
+";s:31:"effects.for_abs_inc.debuff.self";s:43:"diminuir em #{value}% o seu dano absorvido
+";s:32:"effects.for_abs_inc.debuff.enemy";s:50:"diminuir em #{value}% o dano absorvido do inimigo
+";s:26:"effects.for_prec.buff.self";s:37:"aumentar em #{value} a sua precisão
+";s:27:"effects.for_prec.buff.enemy";s:44:"aumentar em #{value} a precisão do inimigo
+";s:28:"effects.for_prec.debuff.self";s:37:"diminuir a sua precisão em #{value}
+";s:29:"effects.for_prec.debuff.enemy";s:42:"diminuir #{value} da precisão do inimigo
+";s:26:"effects.for_init.buff.self";s:38:"aumentar em #{value} a sua iniciativa
+";s:27:"effects.for_init.buff.enemy";s:45:"aumentar em #{value} a iniciativa do inimigo
+";s:28:"effects.for_init.debuff.self";s:38:"diminuir a sua iniciativa em #{value}
+";s:29:"effects.for_init.debuff.enemy";s:43:"diminuir #{value} da iniciativa do inimigo
+";s:25:"effects.for_hit.buff.self";s:44:"aumentar em #{value} a sua chance de acerto
+";s:26:"effects.for_hit.buff.enemy";s:51:"aumentar em #{value} a chance de acerto do inimigo
+";s:27:"effects.for_hit.debuff.self";s:44:"diminuir a sua chance de acerto em #{value}
+";s:28:"effects.for_hit.debuff.enemy";s:49:"diminuir #{value} da chance de acerto do inimigo
+";s:30:"effects.attack_speed.buff.self";s:47:"diminuir em #{value} o seu tempo de execução
+";s:31:"effects.attack_speed.buff.enemy";s:54:"diminuir em #{value} o tempo de execução do inimigo
+";s:32:"effects.attack_speed.debuff.self";s:47:"aumentar o seu tempo de execução em #{value}
+";s:33:"effects.attack_speed.debuff.enemy";s:52:"aumentar #{value} do tempo de execução do inimigo
+";s:32:"effects.next_mana_cost.buff.self";s:53:"diminuir em #{value} o custo de mana dos seus golpes
+";s:33:"effects.next_mana_cost.buff.enemy";s:53:"diminuir em #{value} o custo de mana dos seus golpes
+";s:34:"effects.next_mana_cost.debuff.self";s:57:"aumentar em #{value} o custo de mana dos golpes inimigos
+";s:35:"effects.next_mana_cost.debuff.enemy";s:57:"aumentar em #{value} o custo de mana dos golpes inimigos
+";s:39:"effects.lock_random_technique.buff.self";s:32:"desbloquear um golpe aleatório
+";s:40:"effects.lock_random_technique.buff.enemy";s:43:"desbloquear um golpe aleatório do inimigo
+";s:41:"effects.lock_random_technique.debuff.self";s:26:"selar um golpe aleatório
+";s:42:"effects.lock_random_technique.debuff.enemy";s:37:"selar um golpe aleatório do inimigo
+";s:37:"effects.copy_last_technique.buff.self";s:46:"copiar o último golpe utilizado pelo inimigo
+";s:38:"effects.copy_last_technique.buff.enemy";s:43:"copiar o último golpe utilizado por você
+";s:39:"effects.copy_last_technique.debuff.self";s:46:"copiar o último golpe utilizado pelo inimigo
+";s:40:"effects.copy_last_technique.debuff.enemy";s:43:"copiar o último golpe utilizado por você
+";s:35:"effects.last_hit_dont_die.buff.self";s:57:"sobreviver caso receber um golpe fatal no próximo turno
+";s:36:"effects.last_hit_dont_die.buff.enemy";s:57:"sobreviver caso receber um golpe fatal no próximo turno
+";s:37:"effects.last_hit_dont_die.debuff.self";s:57:"sobreviver caso receber um golpe fatal no próximo turno
+";s:38:"effects.last_hit_dont_die.debuff.enemy";s:57:"sobreviver caso receber um golpe fatal no próximo turno
+";s:34:"effects.null_next_attack.buff.self";s:35:"anular o próximo golpe do inimigo
+";s:35:"effects.null_next_attack.buff.enemy";s:35:"anular o próximo golpe do inimigo
+";s:36:"effects.null_next_attack.debuff.self";s:28:"anular o seu próximo golpe
+";s:37:"effects.null_next_attack.debuff.enemy";s:28:"anular o seu próximo golpe
+";s:33:"effects.dodge_technique.buff.self";s:37:"esquivar o próximo golpe do inimigo
+";s:34:"effects.dodge_technique.buff.enemy";s:37:"esquivar o próximo golpe do inimigo
+";s:35:"effects.dodge_technique.debuff.self";s:30:"esquivar o seu próximo golpe
+";s:36:"effects.dodge_technique.debuff.enemy";s:30:"esquivar o seu próximo golpe
+";s:43:"effects.turns_attack_to_elemental.buff.self";s:49:"transformar seu próximo golpe no tipo Elemental
+";s:44:"effects.turns_attack_to_elemental.buff.enemy";s:55:"transformar o próximo golpe inimigo no tipo Elemental
+";s:45:"effects.turns_attack_to_elemental.debuff.self";s:49:"transformar seu próximo golpe no tipo Elemental
+";s:46:"effects.turns_attack_to_elemental.debuff.enemy";s:55:"transformar o próximo golpe inimigo no tipo Elemental
+";s:41:"effects.turns_attack_to_neutral.buff.self";s:46:"transformar seu próximo golpe no tipo Neutro
+";s:42:"effects.turns_attack_to_neutral.buff.enemy";s:52:"transformar o próximo golpe inimigo no tipo Neutro
+";s:43:"effects.turns_attack_to_neutral.debuff.self";s:46:"transformar seu próximo golpe no tipo Neutro
+";s:44:"effects.turns_attack_to_neutral.debuff.enemy";s:52:"transformar o próximo golpe inimigo no tipo Neutro
+";s:41:"effects.turns_attack_to_fighter.buff.self";s:53:"transformar seu próximo golpe no tipo Corpo-a-Corpo
+";s:42:"effects.turns_attack_to_fighter.buff.enemy";s:59:"transformar o próximo golpe inimigo no tipo Corpo-a-Corpo
+";s:43:"effects.turns_attack_to_fighter.debuff.self";s:53:"transformar seu próximo golpe no tipo Corpo-a-Corpo
+";s:44:"effects.turns_attack_to_fighter.debuff.enemy";s:59:"transformar o próximo golpe inimigo no tipo Corpo-a-Corpo
+";s:39:"effects.turns_attack_to_magic.buff.self";s:47:"transformar seu próximo golpe no tipo Mágico
+";s:40:"effects.turns_attack_to_magic.buff.enemy";s:53:"transformar o próximo golpe inimigo no tipo Mágico
+";s:41:"effects.turns_attack_to_magic.debuff.self";s:47:"transformar seu próximo golpe no tipo Mágico
+";s:42:"effects.turns_attack_to_magic.debuff.enemy";s:53:"transformar o próximo golpe inimigo no tipo Mágico
+";s:41:"effects.turns_attack_to_warrior.buff.self";s:49:"transformar seu próximo golpe no tipo Guerreiro
+";s:42:"effects.turns_attack_to_warrior.buff.enemy";s:55:"transformar o próximo golpe inimigo no tipo Guerreiro
+";s:43:"effects.turns_attack_to_warrior.debuff.self";s:49:"transformar seu próximo golpe no tipo Guerreiro
+";s:44:"effects.turns_attack_to_warrior.debuff.enemy";s:55:"transformar o próximo golpe inimigo no tipo Guerreiro
+";s:40:"effects.turns_attack_to_ranger.buff.self";s:48:"transformar seu próximo golpe no tipo Atirador
+";s:41:"effects.turns_attack_to_ranger.buff.enemy";s:54:"transformar o próximo golpe inimigo no tipo Atirador
+";s:42:"effects.turns_attack_to_ranger.debuff.self";s:48:"transformar seu próximo golpe no tipo Atirador
+";s:43:"effects.turns_attack_to_ranger.debuff.enemy";s:54:"transformar o próximo golpe inimigo no tipo Atirador
+";s:30:"effects.removes_stun.buff.self";s:51:"remover o efeito de Atordoamento do seu personagem
+";s:31:"effects.removes_stun.buff.enemy";s:48:"remover o efeito de Atordoamento do seu inimigo
+";s:32:"effects.removes_stun.debuff.self";s:51:"remover o efeito de Atordoamento do seu personagem
+";s:33:"effects.removes_stun.debuff.enemy";s:48:"remover o efeito de Atordoamento do seu inimigo
+";s:33:"effects.remove_slowness.buff.self";s:48:"remover o efeito de Lentidão do seu personagem
+";s:34:"effects.remove_slowness.buff.enemy";s:45:"remover o efeito de Lentidão do seu inimigo
+";s:35:"effects.remove_slowness.debuff.self";s:48:"remover o efeito de Lentidão do seu personagem
+";s:36:"effects.remove_slowness.debuff.enemy";s:45:"remover o efeito de Lentidão do seu inimigo
+";s:33:"effects.remove_bleeding.buff.self";s:50:"remover o efeito de Sangramento do seu personagem
+";s:34:"effects.remove_bleeding.buff.enemy";s:47:"remover o efeito de Sangramento do seu inimigo
+";s:35:"effects.remove_bleeding.debuff.self";s:50:"remover o efeito de Sangramento do seu personagem
+";s:36:"effects.remove_bleeding.debuff.enemy";s:47:"remover o efeito de Sangramento do seu inimigo
+";s:34:"effects.remove_confusion.buff.self";s:48:"remover o efeito de Confusão do seu personagem
+";s:35:"effects.remove_confusion.buff.enemy";s:45:"remover o efeito de Confusão do seu inimigo
+";s:36:"effects.remove_confusion.debuff.self";s:48:"remover o efeito de Confusão do seu personagem
+";s:37:"effects.remove_confusion.debuff.enemy";s:45:"remover o efeito de Confusão do seu inimigo
+";s:40:"effects.double_bleeding_chance.buff.self";s:57:"dobrar a chance do seu próximo golpe deixar Sangramento
+";s:41:"effects.double_bleeding_chance.buff.enemy";s:57:"dobrar a chance do seu próximo golpe deixar Sangramento
+";s:42:"effects.double_bleeding_chance.debuff.self";s:57:"dobrar a chance do seu próximo golpe deixar Sangramento
+";s:43:"effects.double_bleeding_chance.debuff.enemy";s:57:"dobrar a chance do seu próximo golpe deixar Sangramento
+";s:36:"effects.double_stun_chance.buff.self";s:58:"dobrar a chance do seu próximo golpe deixar Atordoamento
+";s:37:"effects.double_stun_chance.buff.enemy";s:58:"dobrar a chance do seu próximo golpe deixar Atordoamento
+";s:38:"effects.double_stun_chance.debuff.self";s:58:"dobrar a chance do seu próximo golpe deixar Atordoamento
+";s:39:"effects.double_stun_chance.debuff.enemy";s:58:"dobrar a chance do seu próximo golpe deixar Atordoamento
+";s:40:"effects.double_slowness_chance.buff.self";s:55:"dobrar a chance do seu próximo golpe deixar Lentidão
+";s:41:"effects.double_slowness_chance.buff.enemy";s:55:"dobrar a chance do seu próximo golpe deixar Lentidão
+";s:42:"effects.double_slowness_chance.debuff.self";s:55:"dobrar a chance do seu próximo golpe deixar Lentidão
+";s:43:"effects.double_slowness_chance.debuff.enemy";s:55:"dobrar a chance do seu próximo golpe deixar Lentidão
+";s:41:"effects.double_confusion_chance.buff.self";s:55:"dobrar a chance do seu próximo golpe deixar Confusão
+";s:42:"effects.double_confusion_chance.buff.enemy";s:55:"dobrar a chance do seu próximo golpe deixar Confusão
+";s:43:"effects.double_confusion_chance.debuff.self";s:55:"dobrar a chance do seu próximo golpe deixar Confusão
+";s:44:"effects.double_confusion_chance.debuff.enemy";s:55:"dobrar a chance do seu próximo golpe deixar Confusão
+";s:44:"effects.increase_bleeding_duration.buff.self";s:71:"diminuir em #{value} turno(s) efeitos de Sangramento em seu personagem
+";s:45:"effects.increase_bleeding_duration.buff.enemy";s:64:"diminuir em #{value} turno(s) efeitos de Sangramento no inimigo
+";s:46:"effects.increase_bleeding_duration.debuff.self";s:71:"aumentar em #{value} turno(s) efeitos de Sangramento em seu personagem
+";s:47:"effects.increase_bleeding_duration.debuff.enemy";s:65:"aumentar em #{value} turno(s) efeitos de Sangramento no inimigo	
+";s:44:"effects.increase_slowness_duration.buff.self";s:69:"diminuir em #{value} turno(s) efeitos de Lentidão em seu personagem
+";s:45:"effects.increase_slowness_duration.buff.enemy";s:62:"diminuir em #{value} turno(s) efeitos de Lentidão no inimigo
+";s:46:"effects.increase_slowness_duration.debuff.self";s:69:"aumentar em #{value} turno(s) efeitos de Lentidão em seu personagem
+";s:47:"effects.increase_slowness_duration.debuff.enemy";s:63:"aumentar em #{value} turno(s) efeitos de Lentidão no inimigo	
+";s:45:"effects.increase_confusion_duration.buff.self";s:69:"diminuir em #{value} turno(s) efeitos de Confusão em seu personagem
+";s:46:"effects.increase_confusion_duration.buff.enemy";s:62:"diminuir em #{value} turno(s) efeitos de Confusão no inimigo
+";s:47:"effects.increase_confusion_duration.debuff.self";s:69:"aumentar em #{value} turno(s) efeitos de Confusão em seu personagem
+";s:48:"effects.increase_confusion_duration.debuff.enemy";s:63:"aumentar em #{value} turno(s) efeitos de Confusão no inimigo	
+";s:40:"effects.remove_attack_weakness.buff.self";s:49:"remover a fraqueza do tipo do seu próximo golpe
+";s:41:"effects.remove_attack_weakness.buff.enemy";s:53:"remover a fraqueza do tipo do próximo golpe inimigo
+";s:42:"effects.remove_attack_weakness.debuff.self";s:49:"remover a fraqueza do tipo do seu próximo golpe
+";s:43:"effects.remove_attack_weakness.debuff.enemy";s:54:"remover a fraqueza do tipo do próximo golpe inimigo	
+";s:38:"effects.double_strong_effect.buff.self";s:48:"dobrar a vantagem do tipo do seu próximo golpe
+";s:39:"effects.double_strong_effect.buff.enemy";s:52:"dobrar a vantagem do tipo do próximo golpe inimigo
+";s:40:"effects.double_strong_effect.debuff.self";s:48:"dobrar a vantagem do tipo do seu próximo golpe
+";s:41:"effects.double_strong_effect.debuff.enemy";s:52:"dobrar a vantagem do tipo do próximo golpe inimigo
+";s:28:"effects.heals_life.buff.self";s:31:"recuperar #{value} da sua vida
+";s:29:"effects.heals_life.buff.enemy";s:38:"recuperar #{value} da vida do inimigo
+";s:30:"effects.heals_life.debuff.self";s:31:"recuperar #{value} da sua vida
+";s:31:"effects.heals_life.debuff.enemy";s:44:"recuperar #{value} da vida do inimigo      
+";s:28:"effects.heals_mana.buff.self";s:31:"recuperar #{value} da sua mana
+";s:29:"effects.heals_mana.buff.enemy";s:38:"recuperar #{value} da mana do inimigo
+";s:30:"effects.heals_mana.debuff.self";s:28:"gastar #{value} da sua mana
+";s:31:"effects.heals_mana.debuff.enemy";s:36:"gastar #{value} da mana do inimigo 
+";s:39:"effects.renew_random_cooldown.buff.self";s:50:"resetar o Tempo de Recarga de um golpe aleatório
+";s:40:"effects.renew_random_cooldown.buff.enemy";s:61:"resetar o Tempo de Recarga de um golpe aleatório do inimigo
+";s:41:"effects.renew_random_cooldown.debuff.self";s:50:"resetar o Tempo de Recarga de um golpe aleatório
+";s:42:"effects.renew_random_cooldown.debuff.enemy";s:61:"resetar o Tempo de Recarga de um golpe aleatório do inimigo
+";s:34:"effects.next_is_critical.buff.self";s:28:"Crítico no próximo turno.
+";s:35:"effects.next_is_critical.buff.enemy";s:28:"Crítico no próximo turno.
+";s:36:"effects.next_is_critical.debuff.self";s:28:"Crítico no próximo turno.
+";s:37:"effects.next_is_critical.debuff.enemy";s:28:"Crítico no próximo turno.
+";s:32:"effects.next_is_absorb.buff.self";s:30:"Absorção no próximo turno.
+";s:33:"effects.next_is_absorb.buff.enemy";s:30:"Absorção no próximo turno.
+";s:34:"effects.next_is_absorb.debuff.self";s:30:"Absorção no próximo turno.
+";s:35:"effects.next_is_absorb.debuff.enemy";s:30:"Absorção no próximo turno.
+";s:33:"effects.next_is_precise.buff.self";s:29:"Precisão no próximo turno.
+";s:34:"effects.next_is_precise.buff.enemy";s:29:"Precisão no próximo turno.
+";s:35:"effects.next_is_precise.debuff.self";s:29:"Precisão no próximo turno.
+";s:36:"effects.next_is_precise.debuff.enemy";s:29:"Precisão no próximo turno.
+";s:31:"effects.next_will_hit.buff.self";s:35:"Chance de Acerto no próximo turno
+";s:32:"effects.next_will_hit.buff.enemy";s:35:"Chance de Acerto no próximo turno
+";s:33:"effects.next_will_hit.debuff.self";s:35:"Chance de Acerto no próximo turno
+";s:34:"effects.next_will_hit.debuff.enemy";s:35:"Chance de Acerto no próximo turno
+";s:41:"effects_roundup.turns_attack_to_elemental";s:49:"O próximo golpe inimigo será do tipo Elemental
+";s:39:"effects_roundup.turns_attack_to_fighter";s:53:"O próximo golpe inimigo será do tipo Corpo-a-Corpo
+";s:37:"effects_roundup.turns_attack_to_magic";s:47:"O próximo golpe inimigo será do tipo Mágico
+";s:38:"effects_roundup.turns_attack_to_ranger";s:48:"O próximo golpe inimigo será do tipo Atirador
+";s:39:"effects_roundup.turns_attack_to_warrior";s:49:"O próximo golpe inimigo será do tipo Guerreiro
+";s:20:"effects_roundup.stun";s:101:"<span style="color:#08decc; font-size: 15px">Atordoamento</span><br/>Atordoado por #{value} turno(s)
+";s:24:"effects_roundup.bleeding";s:117:"<span style="color:#fb102b; font-size: 15px">Sangramento</span><br/>Recebendo #{value} de dano por #{turns} turno(s)
+";s:32:"effects_roundup.bleeding_percent";s:118:"<span style="color:#fb102b; font-size: 15px">Sangramento</span><br/>Recebendo #{value}% de dano por #{turns} turno(s)
+";s:24:"effects_roundup.slowness";s:164:"<span style="color:#107efb; font-size: 15px">Lentidão</span><br/>Seus Golpes estão #{value} mais lentos e o tempo de recarga aumentado em 1 por #{turns} turno(s)
+";s:32:"effects_roundup.slowness_percent";s:165:"<span style="color:#107efb; font-size: 15px">Lentidão</span><br/>Seus Golpes estão #{value}% mais lentos e o tempo de recarga aumentado em 1 por #{turns} turno(s)
+";s:25:"effects_roundup.confusion";s:142:"<span style="color:#fb8410; font-size: 15px">Confusão</span><br/>Seus golpes estão com  #{value}% de Chance de Acerto por #{turns} turno(s)
+";s:33:"effects_roundup.confusion_percent";s:142:"<span style="color:#fb8410; font-size: 15px">Confusão</span><br/>Seus golpes estão com  #{value}% de Chance de Acerto por #{turns} turno(s)
+";s:23:"effects_roundup.for_atk";s:41:"#{value} de Ataque por #{turns} turno(s)
+";s:31:"effects_roundup.for_atk_percent";s:42:"#{value}% de Ataque por #{turns} turno(s)
+";s:23:"effects_roundup.for_def";s:41:"#{value} de Defesa por #{turns} turno(s)
+";s:31:"effects_roundup.for_def_percent";s:42:"#{value}% de Defesa por #{turns} turno(s)
+";s:24:"effects_roundup.for_crit";s:54:"#{value}% de Chance de Crítico por #{turns} turno(s)
+";s:32:"effects_roundup.for_crit_percent";s:54:"#{value}% de Chance de Crítico por #{turns} turno(s)
+";s:28:"effects_roundup.for_crit_inc";s:49:"#{value}% de Dano Crítico por #{turns} turno(s)
+";s:36:"effects_roundup.for_crit_inc_percent";s:49:"#{value}% de Dano Crítico por #{turns} turno(s)
+";s:23:"effects_roundup.for_abs";s:56:"#{value}% de Chance de Absorção por #{turns} turno(s)
+";s:31:"effects_roundup.for_abs_percent";s:56:"#{value}% de Chance de Absorção por #{turns} turno(s)
+";s:27:"effects_roundup.for_abs_inc";s:50:"#{value}% de Dano Absorvido por #{turns} turno(s)
+";s:35:"effects_roundup.for_abs_inc_percent";s:50:"#{value}% de Dano Absorvido por #{turns} turno(s)
+";s:24:"effects_roundup.for_prec";s:55:"#{value}% de Chance de Precisão por #{turns} turno(s)
+";s:32:"effects_roundup.for_prec_percent";s:55:"#{value}% de Chance de Precisão por #{turns} turno(s)
+";s:24:"effects_roundup.for_init";s:45:"#{value} de Iniciativa por #{turns} turno(s)
+";s:32:"effects_roundup.for_init_percent";s:46:"#{value}% de Iniciativa por #{turns} turno(s)
+";s:23:"effects_roundup.for_hit";s:52:"#{value}% de Chance de Acerto por #{turns} turno(s)
+";s:31:"effects_roundup.for_hit_percent";s:52:"#{value}% de Chance de Acerto por #{turns} turno(s)
+";s:28:"effects_roundup.attack_speed";s:54:"#{value} de Tempo de Execução por #{turns} turno(s)
+";s:36:"effects_roundup.attack_speed_percent";s:55:"#{value}% de Tempo de Execução por #{turns} turno(s)
+";s:32:"effects_roundup.null_next_attack";s:25:"Anula o golpe do inimigo
+";s:26:"effects_roundup.steal_mana";s:38:"Rouba #{value} de mana do adversário
+";s:27:"effects_roundup.remove_mana";s:39:"Remove #{value} de mana do adversário
+";s:31:"effects_roundup.dodge_technique";s:27:"Esquiva o golpe do inimigo
+";s:26:"effects_roundup.heals_mana";s:43:"Recupera #{value} de mana instantaneamente
+";s:26:"effects_roundup.heals_life";s:39:"Cura #{value} de vida instantaneamente
+";s:38:"effects_roundup.remove_attack_weakness";s:40:"Remove a fraqueza do seu próximo golpe
+";s:36:"effects_roundup.double_strong_effect";s:39:"Dobra a vantagem do seu próximo golpe
+";s:30:"effects_roundup.next_mana_cost";s:69:"#{value} de mana extra no custo de seus golpes por #{turns} turno(s)
+";s:33:"effects_roundup.cancel_regen_mana";s:53:"Você não irá recuperar mana por #{turns} turno(s)
+";s:28:"effects_roundup.steal_health";s:64:"Você recuperará 10% do seu dano em vida por #{turns} turno(s)
+";s:33:"effects_roundup.last_hit_dont_die";s:29:"Não morre no próximo golpe
+";s:30:"effects_roundup.next_is_absorb";s:41:"O próximo golpe inimigo será absorvido
+";s:32:"effects_roundup.next_is_critical";s:36:"O seu próximo golpe será crítico
+";s:29:"effects_roundup.next_will_hit";s:52:"O seu próximo golpe terá 100% de chance de acerto
+";s:31:"effects_roundup.next_is_precise";s:35:"O seu próximo golpe será preciso
+";s:37:"effects_roundup.lock_random_technique";s:49:"Um golpe seu foi bloqueado por #{turns} turno(s)
+";s:37:"effects_roundup.renew_random_cooldown";s:37:"Um golpe aleatório seu foi resetado
+";s:32:"effects_roundup.elemental_damage";s:27:"#{value} de Dano Elemental
+";s:40:"effects_roundup.elemental_damage_percent";s:28:"#{value}% de Dano Elemental
+";s:30:"effects_roundup.fighter_damage";s:31:"#{value} de Dano Corpo-a-corpo
+";s:38:"effects_roundup.fighter_damage_percent";s:32:"#{value}% de Dano Corpo-a-corpo
+";s:28:"effects_roundup.magic_damage";s:25:"#{value} de Dano Mágico
+";s:36:"effects_roundup.magic_damage_percent";s:26:"#{value}% de Dano Mágico
+";s:30:"effects_roundup.warrior_damage";s:27:"#{value} de Dano Guerreiro
+";s:38:"effects_roundup.warrior_damage_percent";s:28:"#{value}% de Dano Guerreiro
+";s:29:"effects_roundup.ranger_damage";s:26:"#{value} de Dano Atirador
+";s:37:"effects_roundup.ranger_damage_percent";s:27:"#{value}% de Dano Atirador
+";s:31:"effects_roundup.bleeding_chance";s:35:"#{value}% de Chance de Sangramento
+";s:39:"effects_roundup.bleeding_chance_percent";s:35:"#{value}% de Chance de Sangramento
+";s:31:"effects_roundup.slowness_chance";s:33:"#{value}% de Chance de Lentidão
+";s:39:"effects_roundup.slowness_chance_percent";s:33:"#{value}% de Chance de Lentidão
+";s:32:"effects_roundup.confusion_chance";s:33:"#{value}% de Chance de Confusão
+";s:40:"effects_roundup.confusion_chance_percent";s:33:"#{value}% de Chance de Confusão
+";s:27:"effects_roundup.stun_chance";s:36:"#{value}% de Chance de Atordoamento
+";s:35:"effects_roundup.stun_chance_percent";s:36:"#{value}% de Chance de Atordoamento
+";s:29:"effects_roundup.strong_effect";s:50:"#{value} de dano na Vantagem do tipo do seu golpe
+";s:37:"effects_roundup.strong_effect_percent";s:51:"#{value}% de dano na Vantagem do tipo do seu golpe
+";s:27:"effects_roundup.weak_effect";s:53:"#{value} de dano na desvantagem do tipo do seu golpe
+";s:35:"effects_roundup.weak_effect_percent";s:54:"#{value}% de dano na desvantagem do tipo do seu golpe
+";s:29:"effects_roundup.heals_by_turn";s:27:"#{value} de vida por turno
+";s:37:"effects_roundup.heals_by_turn_percent";s:28:"#{value}% de vida por turno
+";s:34:"effects_roundup.mana_through_turns";s:42:"Recupera 1 de mana a cada #{value} turnos
+";s:42:"effects_roundup.mana_through_turns_percent";s:43:"Recupera 1 de mana a cada #{value}% turnos
+";s:32:"effects_roundup.exp_reward_extra";s:51:"#{value} de experiência extra no final da batalha
+";s:40:"effects_roundup.exp_reward_extra_percent";s:52:"#{value}% de experiência extra no final da batalha
+";s:37:"effects_roundup.currency_reward_extra";s:47:"#{value} de dinheiro extra no final da batalha
+";s:45:"effects_roundup.currency_reward_extra_percent";s:48:"#{value}% de dinheiro extra no final da batalha
+";s:25:"effects_roundup.item_find";s:55:"#{value}% de chance de achar itens no final da batalha
+";s:33:"effects_roundup.item_find_percent";s:55:"#{value}% de chance de achar itens no final da batalha
+";s:29:"effects_roundup.fragment_find";s:70:"#{value}% de chance de achar fragmentos das almas no final da batalha
+";s:37:"effects_roundup.fragment_find_percent";s:70:"#{value}% de chance de achar fragmentos das almas no final da batalha
+";s:29:"effects_roundup.grimoire_find";s:67:"#{value}% de chance de achar páginas perdidas no final da batalha
+";s:37:"effects_roundup.grimoire_find_percent";s:58:"#{value}% de chance de achar páginas no final da batalha
+";s:34:"effects_roundup.damage_in_bleeding";s:50:"#{value} de dano extra em inimigo com Sangramento
+";s:42:"effects_roundup.damage_in_bleeding_percent";s:51:"#{value}% de dano extra em inimigo com Sangramento
+";s:34:"effects_roundup.damage_in_slowness";s:48:"#{value} de dano extra em inimigo com Lentidão
+";s:42:"effects_roundup.damage_in_slowness_percent";s:49:"#{value}% de dano extra em inimigo com Lentidão
+";s:35:"effects_roundup.damage_in_confusion";s:48:"#{value} de dano extra em inimigo com Confusão
+";s:43:"effects_roundup.damage_in_confusion_percent";s:49:"#{value}% de dano extra em inimigo com Confusão
+";s:30:"effects_roundup.damage_in_stun";s:45:"#{value} de dano extra em inimigo Atordoados
+";s:38:"effects_roundup.damage_in_stun_percent";s:46:"#{value}% de dano extra em inimigo Atordoados
+";s:37:"effects_roundup.generic_attack_damage";s:39:"#{value} de dano nos golpes genéricos
+";s:45:"effects_roundup.generic_attack_damage_percent";s:40:"#{value}% de dano nos golpes genéricos
+";s:31:"effects_roundup.generic_defense";s:41:"#{value} de defesa nos golpes defensivos
+";s:39:"effects_roundup.generic_defense_percent";s:42:"#{value}% de defesa nos golpes defensivos
+";s:36:"effects_roundup.unique_attack_damage";s:36:"#{value} de dano nos golpes únicos
+";s:44:"effects_roundup.unique_attack_damage_percent";s:37:"#{value}% de dano nos golpes únicos
+";s:32:"effects_roundup.attack_half_life";s:44:"#{value} de Ataque com menos de 50% da vida
+";s:40:"effects_roundup.attack_half_life_percent";s:45:"#{value}% de Ataque com menos de 50% da vida
+";s:33:"effects_roundup.defense_half_life";s:44:"#{value} de Defesa com menos de 50% da vida
+";s:41:"effects_roundup.defense_half_life_percent";s:45:"#{value}% de Defesa com menos de 50% da vida
+";s:40:"effects_roundup.increase_bleeding_damage";s:38:"#{value} de Dano Extra em Sangramento
+";s:48:"effects_roundup.increase_bleeding_damage_percent";s:39:"#{value}% de Dano Extra em Sangramento
+";s:40:"effects_roundup.increase_slowness_damage";s:53:"#{value} de Tempo de Execução durante a Lentidão 
+";s:48:"effects_roundup.increase_slowness_damage_percent";s:53:"#{value}% de Tempo de Execução durante a Lentidão
+";s:41:"effects_roundup.increase_confusion_damage";s:49:"#{value} de Chance de Acerto durante a Confusão
+";s:49:"effects_roundup.increase_confusion_damage_percent";s:50:"#{value}% de Chance de Acerto durante a Confusão
+";s:30:"effects_roundup.next_turn_mana";s:60:"#{value}% de Chance de recuperar 1 de Mana ao Pular o Turno
+";s:38:"effects_roundup.next_turn_mana_percent";s:60:"#{value}% de Chance de recuperar 1 de Mana ao Pular o Turno
+";s:30:"effects_roundup.next_turn_life";s:61:"#{value}% de Chance de recuperar 50 de Vida ao Pular o Turno
+";s:38:"effects_roundup.next_turn_life_percent";s:61:"#{value}% de Chance de recuperar 50 de Vida ao Pular o Turno
+";s:30:"effects_roundup.mana_half_life";s:84:"#{value}% de Chance de recuperar 1 de mana quando sua mana estiver abaixo da metade
+";s:38:"effects_roundup.mana_half_life_percent";s:84:"#{value}% de Chance de recuperar 1 de mana quando sua mana estiver abaixo da metade
+";s:38:"effects_roundup.reduce_critical_damage";s:61:"#{value}% de Chance de reduzir pela metade seu Dano Crítico
+";s:46:"effects_roundup.reduce_critical_damage_percent";s:61:"#{value}% de Chance de reduzir pela metade seu Dano Crítico
+";s:38:"effects_roundup.enemy_absorb_reduction";s:64:"#{value}% de Chance de reduzir pela metade o seu Dano Absorvido
+";s:46:"effects_roundup.enemy_absorb_reduction_percent";s:64:"#{value}% de Chance de reduzir pela metade o seu Dano Absorvido
+";s:37:"effects_roundup.low_technique_no_cost";s:70:"#{value}% de Chance dos golpes de até 3 de Mana não consumirem Mana
+";s:45:"effects_roundup.low_technique_no_cost_percent";s:70:"#{value}% de Chance dos golpes de até 3 de Mana não consumirem Mana
+";s:41:"effects_roundup.mid_technique_no_cooldown";s:60:"#{value}% de Chance dos golpes com 4 a 7 não terem Recarga
+";s:49:"effects_roundup.mid_technique_no_cooldown_percent";s:60:"#{value}% de Chance dos golpes com 4 a 7 não terem Recarga
+";s:40:"effects_roundup.high_technique_half_cost";s:81:"#{value}% de Chance dos golpes com 8 ou mais de Mana gastarem apenas 50% de Mana
+";s:48:"effects_roundup.high_technique_half_cost_percent";s:81:"#{value}% de Chance dos golpes com 8 ou mais de Mana gastarem apenas 50% de Mana
+";s:44:"effects_roundup.damage_increase_in_confusion";s:80:"#{value}% de Chance de aumentar o dano em 25% quando o oponente estiver Confuso
+";s:52:"effects_roundup.damage_increase_in_confusion_percent";s:80:"#{value}% de Chance de aumentar o dano em 25% quando o oponente estiver Confuso
+";s:43:"effects_roundup.damage_increase_in_slowness";s:78:"#{value}% de Chance de aumentar o dano em 25% quando o oponente estiver Lento
+";s:51:"effects_roundup.damage_increase_in_slowness_percent";s:78:"#{value}% de Chance de aumentar o dano em 25% quando o oponente estiver Lento
+";s:39:"effects_roundup.half_weak_damage_chance";s:72:"#{value}% de Chance de diminuir pela metade o dano de fraqueza de golpe
+";s:47:"effects_roundup.half_weak_damage_chance_percent";s:72:"#{value}% de Chance de diminuir pela metade o dano de fraqueza de golpe
+";s:33:"effects_roundup.bonus_stamina_max";s:26:"#{value} de Stamina Extra
+";s:41:"effects_roundup.bonus_stamina_max_percent";s:27:"#{value}% de Stamina Extra
+";s:34:"effects_roundup.bonus_stamina_heal";s:43:"#{value} de recuperação extra de Stamina
+";s:42:"effects_roundup.bonus_stamina_heal_percent";s:44:"#{value}% de recuperação extra de Stamina
+";s:34:"effects_roundup.no_consume_stamina";s:61:"#{value}% de chance de batalha npc não consumir sua Stamina
+";s:42:"effects_roundup.no_consume_stamina_percent";s:61:"#{value}% de chance de batalha npc não consumir sua Stamina
+";s:34:"effects_roundup.bonus_gold_mission";s:37:"#{value}% a mais de Ouro em missões
+";s:42:"effects_roundup.bonus_gold_mission_percent";s:37:"#{value}% a mais de Ouro em missões
+";s:33:"effects_roundup.bonus_exp_mission";s:45:"#{value}% a mais de Experiência em missões
+";s:41:"effects_roundup.bonus_exp_mission_percent";s:45:"#{value}% a mais de Experiência em missões
+";s:25:"effects_roundup.pets_find";s:51:"#{value}% a mais de chance para encontrar Mascotes
+";s:33:"effects_roundup.pets_find_percent";s:51:"#{value}% a mais de chance para encontrar Mascotes
+";s:38:"effects_roundup.double_bleeding_chance";s:57:"Seu próximo golpe terá a chance de sangramento dobrada
+";s:46:"effects_roundup.double_bleeding_chance_percent";s:57:"Seu próximo golpe terá a chance de sangramento dobrada
+";s:39:"effects_roundup.double_confusion_chance";s:55:"Seu próximo golpe terá a chance de confusão dobrada
+";s:47:"effects_roundup.double_confusion_chance_percent";s:55:"Seu próximo golpe terá a chance de confusão dobrada
+";s:38:"effects_roundup.double_slowness_chance";s:55:"Seu próximo golpe terá a chance de lentidão dobrada
+";s:46:"effects_roundup.double_slowness_chance_percent";s:55:"Seu próximo golpe terá a chance de lentidão dobrada
+";s:34:"effects_roundup.double_stun_chance";s:54:"Seu próximo golpe terá a chance de atordoar dobrada
+";s:42:"effects_roundup.double_stun_chance_percent";s:54:"Seu próximo golpe terá a chance de atordoar dobrada
+";s:39:"effects_roundup.turns_attack_to_neutral";s:39:"Seu próximo golpe será do tipo Neutro";s:47:"effects_roundup.turns_attack_to_neutral_percent";s:39:"Seu próximo golpe será do tipo Neutro";s:31:"fixed_effects.for_atk.buff.self";s:33:"Aumenta em #{value} o seu Ataque
+";s:32:"fixed_effects.for_atk.buff.enemy";s:40:"Aumenta em #{value} o Ataque do inimigo
+";s:33:"fixed_effects.for_atk.debuff.self";s:33:"Diminui em #{value} o seu Ataque
+";s:34:"fixed_effects.for_atk.debuff.enemy";s:40:"Diminui em #{value} o Ataque do inimigo
+";s:31:"fixed_effects.for_def.buff.self";s:33:"Aumenta em #{value} a sua Defesa
+";s:32:"fixed_effects.for_def.buff.enemy";s:40:"Aumenta em #{value} a Defesa do inimigo
+";s:33:"fixed_effects.for_def.debuff.self";s:33:"Diminui em #{value} a sua Defesa
+";s:34:"fixed_effects.for_def.debuff.enemy";s:40:"Diminui em #{value} a Defesa do inimigo
+";s:32:"fixed_effects.for_crit.buff.self";s:45:"Aumenta em #{value} a sua Chance de Crítico
+";s:33:"fixed_effects.for_crit.buff.enemy";s:52:"Aumenta em #{value} a Chance de Crítico do inimigo
+";s:34:"fixed_effects.for_crit.debuff.self";s:45:"Diminui em #{value} a sua Chance de Crítico
+";s:35:"fixed_effects.for_crit.debuff.enemy";s:52:"Diminui em #{value} a Chance de Crítico do inimigo
+";s:36:"fixed_effects.for_crit_inc.buff.self";s:50:"Aumenta em #{value}% o seu Incremento de Crítico
+";s:37:"fixed_effects.for_crit_inc.buff.enemy";s:57:"Aumenta em #{value}% o Incremento de Crítico do inimigo
+";s:38:"fixed_effects.for_crit_inc.debuff.self";s:50:"Diminui em #{value}% o seu Incremento de Crítico
+";s:39:"fixed_effects.for_crit_inc.debuff.enemy";s:57:"Diminui em #{value}% o Incremento de Crítico do inimigo
+";s:31:"fixed_effects.for_abs.buff.self";s:47:"Aumenta em #{value} a sua Chance de Absorção
+";s:32:"fixed_effects.for_abs.buff.enemy";s:54:"Aumenta em #{value} a Chance de Absorção do inimigo
+";s:33:"fixed_effects.for_abs.debuff.self";s:47:"Diminui em #{value} a sua Chance de Absorção
+";s:34:"fixed_effects.for_abs.debuff.enemy";s:54:"Diminui em #{value} a Chance de Absorção do inimigo
+";s:35:"fixed_effects.for_abs_inc.buff.self";s:52:"Aumenta em #{value}% o seu Incremento de Absorção
+";s:36:"fixed_effects.for_abs_inc.buff.enemy";s:59:"Aumenta em #{value}% o Incremento de Absorção do inimigo
+";s:37:"fixed_effects.for_abs_inc.debuff.self";s:52:"Diminui em #{value}% o seu Incremento de Absorção
+";s:38:"fixed_effects.for_abs_inc.debuff.enemy";s:59:"Diminui em #{value}% o Incremento de Absorção do inimigo
+";s:32:"fixed_effects.for_prec.buff.self";s:46:"Aumenta em #{value} a sua Chance de Precisão
+";s:33:"fixed_effects.for_prec.buff.enemy";s:53:"Aumenta em #{value} a Chance de Precisão do inimigo
+";s:34:"fixed_effects.for_prec.debuff.self";s:46:"Diminui em #{value} a sua Chance de Precisão
+";s:35:"fixed_effects.for_prec.debuff.enemy";s:53:"Diminui em #{value} a Chance de Precisão do inimigo
+";s:32:"fixed_effects.for_init.buff.self";s:37:"Aumenta em #{value} a sua Iniciativa
+";s:33:"fixed_effects.for_init.buff.enemy";s:44:"Aumenta em #{value} a Iniciativa do inimigo
+";s:34:"fixed_effects.for_init.debuff.self";s:37:"Diminui em #{value} a sua Iniciativa
+";s:35:"fixed_effects.for_init.debuff.enemy";s:44:"Diminui em #{value} a Iniciativa do inimigo
+";s:31:"fixed_effects.for_hit.buff.self";s:43:"Aumenta em #{value} a sua Chance de Acerto
+";s:32:"fixed_effects.for_hit.buff.enemy";s:50:"Aumenta em #{value} a Chance de Acerto do inimigo
+";s:33:"fixed_effects.for_hit.debuff.self";s:43:"Diminui em #{value} a sua Chance de Acerto
+";s:34:"fixed_effects.for_hit.debuff.enemy";s:50:"Diminui em #{value} a Chance de Acerto do inimigo
+";s:36:"fixed_effects.attack_speed.buff.self";s:46:"Diminui em #{value} o seu Tempo de Execução
+";s:37:"fixed_effects.attack_speed.buff.enemy";s:53:"Diminui em #{value} o Tempo de Execução do inimigo
+";s:38:"fixed_effects.attack_speed.debuff.self";s:46:"Aumenta em #{value} o seu Tempo de Execução
+";s:39:"fixed_effects.attack_speed.debuff.enemy";s:53:"Aumenta em #{value} o Tempo de Execução do inimigo
+";s:40:"fixed_effects.elemental_damage.buff.self";s:52:"Aumenta em #{value} o dano Elemental de seus golpes
+";s:41:"fixed_effects.elemental_damage.buff.enemy";s:57:"Aumenta em #{value} o dano Elemental dos golpes inimigos
+";s:42:"fixed_effects.elemental_damage.debuff.self";s:52:"Diminui em #{value} o dano Elemental de seus golpes
+";s:43:"fixed_effects.elemental_damage.debuff.enemy";s:57:"Diminui em #{value} o dano Elemental dos golpes inimigos
+";s:38:"fixed_effects.fighter_damage.buff.self";s:56:"Aumenta em #{value} o dano Corpo-a-corpo de seus golpes
+";s:39:"fixed_effects.fighter_damage.buff.enemy";s:61:"Aumenta em #{value} o dano Corpo-a-corpo dos golpes inimigos
+";s:40:"fixed_effects.fighter_damage.debuff.self";s:56:"Diminui em #{value} o dano Corpo-a-corpo de seus golpes
+";s:41:"fixed_effects.fighter_damage.debuff.enemy";s:61:"Diminui em #{value} o dano Corpo-a-corpo dos golpes inimigos
+";s:36:"fixed_effects.magic_damage.buff.self";s:50:"Aumenta em #{value} o dano Mágico de seus golpes
+";s:37:"fixed_effects.magic_damage.buff.enemy";s:55:"Aumenta em #{value} o dano Mágico dos golpes inimigos
+";s:38:"fixed_effects.magic_damage.debuff.self";s:50:"Diminui em #{value} o dano Mágico de seus golpes
+";s:39:"fixed_effects.magic_damage.debuff.enemy";s:55:"Diminui em #{value} o dano Mágico dos golpes inimigos
+";s:38:"fixed_effects.warrior_damage.buff.self";s:52:"Aumenta em #{value} o dano Guerreiro de seus golpes
+";s:39:"fixed_effects.warrior_damage.buff.enemy";s:57:"Aumenta em #{value} o dano Guerreiro dos golpes inimigos
+";s:40:"fixed_effects.warrior_damage.debuff.self";s:52:"Diminui em #{value} o dano Guerreiro de seus golpes
+";s:41:"fixed_effects.warrior_damage.debuff.enemy";s:57:"Diminui em #{value} o dano Guerreiro dos golpes inimigos
+";s:37:"fixed_effects.ranger_damage.buff.self";s:51:"Aumenta em #{value} o dano Atirador de seus golpes
+";s:38:"fixed_effects.ranger_damage.buff.enemy";s:56:"Aumenta em #{value} o dano Atirador dos golpes inimigos
+";s:39:"fixed_effects.ranger_damage.debuff.self";s:51:"Diminui em #{value} o dano Atirador de seus golpes
+";s:40:"fixed_effects.ranger_damage.debuff.enemy";s:56:"Diminui em #{value} o dano Atirador dos golpes inimigos
+";s:39:"fixed_effects.bleeding_chance.buff.self";s:48:"Aumenta em #{value} a sua Chance de Sangramento
+";s:40:"fixed_effects.bleeding_chance.buff.enemy";s:55:"Aumenta em #{value} a Chance de Sangramento do inimigo
+";s:41:"fixed_effects.bleeding_chance.debuff.self";s:48:"Diminui em #{value} a sua Chance de Sangramento
+";s:42:"fixed_effects.bleeding_chance.debuff.enemy";s:55:"Diminui em #{value} a Chance de Sangramento do inimigo
+";s:39:"fixed_effects.slowness_chance.buff.self";s:46:"Aumenta em #{value} a sua Chance de Lentidão
+";s:40:"fixed_effects.slowness_chance.buff.enemy";s:53:"Aumenta em #{value} a Chance de Lentidão do inimigo
+";s:41:"fixed_effects.slowness_chance.debuff.self";s:46:"Diminui em #{value} a sua Chance de Lentidão
+";s:42:"fixed_effects.slowness_chance.debuff.enemy";s:53:"Diminui em #{value} a Chance de Lentidão do inimigo
+";s:40:"fixed_effects.confusion_chance.buff.self";s:46:"Aumenta em #{value} a sua Chance de Confusão
+";s:41:"fixed_effects.confusion_chance.buff.enemy";s:53:"Aumenta em #{value} a Chance de Confusão do inimigo
+";s:42:"fixed_effects.confusion_chance.debuff.self";s:46:"Diminui em #{value} a sua Chance de Confusão
+";s:43:"fixed_effects.confusion_chance.debuff.enemy";s:53:"Diminui em #{value} a Chance de Confusão do inimigo
+";s:35:"fixed_effects.stun_chance.buff.self";s:49:"Aumenta em #{value} a sua Chance de Atordoamento
+";s:36:"fixed_effects.stun_chance.buff.enemy";s:56:"Aumenta em #{value} a Chance de Atordoamento do inimigo
+";s:37:"fixed_effects.stun_chance.debuff.self";s:49:"Diminui em #{value} a sua Chance de Atordoamento
+";s:38:"fixed_effects.stun_chance.debuff.enemy";s:56:"Diminui em #{value} a Chance de Atordoamento do inimigo
+";s:37:"fixed_effects.strong_effect.buff.self";s:52:"Aumenta em #{value} a vantagem do tipo do seu golpe
+";s:38:"fixed_effects.strong_effect.buff.enemy";s:56:"Aumenta em #{value} a vantagem do tipo do golpe inimigo
+";s:39:"fixed_effects.strong_effect.debuff.self";s:52:"Diminui em #{value} a vantagem do tipo do seu golpe
+";s:40:"fixed_effects.strong_effect.debuff.enemy";s:56:"Diminui em #{value} a vantagem do tipo do golpe inimigo
+";s:35:"fixed_effects.weak_effect.buff.self";s:55:"Diminui em #{value} a desvantagem do tipo do seu golpe
+";s:36:"fixed_effects.weak_effect.buff.enemy";s:59:"Diminui em #{value} a desvantagem do tipo do golpe inimigo
+";s:37:"fixed_effects.weak_effect.debuff.self";s:55:"Aumenta em #{value} a desvantagem do tipo do seu golpe
+";s:38:"fixed_effects.weak_effect.debuff.enemy";s:59:"Aumenta em #{value} a desvantagem do tipo do golpe inimigo
+";s:37:"fixed_effects.heals_by_turn.buff.self";s:36:"Cura #{value} da sua vida por turno
+";s:38:"fixed_effects.heals_by_turn.buff.enemy";s:44:"Causa #{value} da vida do inimigo por turno
+";s:39:"fixed_effects.heals_by_turn.debuff.self";s:42:"Causa #{value} de dano em você por turno
+";s:40:"fixed_effects.heals_by_turn.debuff.enemy";s:44:"Causa #{value} de dano no inimigo por turno
+";s:42:"fixed_effects.mana_through_turns.buff.self";s:46:"Recupera 1 da sua mana a cada #{value} turnos
+";s:43:"fixed_effects.mana_through_turns.buff.enemy";s:53:"Recupera 1 da mana do inimigo a cada #{value} turnos
+";s:44:"fixed_effects.mana_through_turns.debuff.self";s:43:"Gasta 1 da sua mana a cada #{value} turnos
+";s:45:"fixed_effects.mana_through_turns.debuff.enemy";s:50:"Gasta 1 da mana do inimigo a cada #{value} turnos
+";s:40:"fixed_effects.exp_reward_extra.buff.self";s:73:"Aumenta em #{value} a sua recompensa de experiência no final da batalha
+";s:41:"fixed_effects.exp_reward_extra.buff.enemy";s:80:"Aumenta em #{value} a recompensa de experiência do inimigo no final da batalha
+";s:42:"fixed_effects.exp_reward_extra.debuff.self";s:73:"Diminui em #{value} a sua recompensa de experiência no final da batalha
+";s:43:"fixed_effects.exp_reward_extra.debuff.enemy";s:80:"Diminui em #{value} a recompensa de experiência do inimigo no final da batalha
+";s:45:"fixed_effects.currency_reward_extra.buff.self";s:69:"Aumenta em #{value} a sua recompensa de dinheiro no final da batalha
+";s:46:"fixed_effects.currency_reward_extra.buff.enemy";s:76:"Aumenta em #{value} a recompensa de dinheiro do inimigo no final da batalha
+";s:47:"fixed_effects.currency_reward_extra.debuff.self";s:69:"Diminui em #{value} a sua recompensa de dinheiro no final da batalha
+";s:48:"fixed_effects.currency_reward_extra.debuff.enemy";s:76:"Diminui em #{value} a recompensa de dinheiro do inimigo no final da batalha
+";s:33:"fixed_effects.item_find.buff.self";s:69:"Aumenta em #{value}% a sua chance de achar itens no final da batalha
+";s:34:"fixed_effects.item_find.buff.enemy";s:76:"Aumenta em #{value}% a chance de achar itens do inimigo no final da batalha
+";s:35:"fixed_effects.item_find.debuff.self";s:69:"Diminui em #{value}% a sua chance de achar itens no final da batalha
+";s:36:"fixed_effects.item_find.debuff.enemy";s:76:"Diminui em #{value}% a chance de achar itens do inimigo no final da batalha
+";s:37:"fixed_effects.fragment_find.buff.self";s:84:"Aumenta em #{value}% a sua chance de achar fragmentos das almas no final da batalha
+";s:38:"fixed_effects.fragment_find.buff.enemy";s:91:"Aumenta em #{value}% a chance de achar fragmentos das almas do inimigo no final da batalha
+";s:39:"fixed_effects.fragment_find.debuff.self";s:84:"Diminui em #{value}% a sua chance de achar fragmentos das almas no final da batalha
+";s:40:"fixed_effects.fragment_find.debuff.enemy";s:91:"Diminui em #{value}% a chance de achar fragmentos das almas do inimigo no final da batalha
+";s:37:"fixed_effects.grimoire_find.buff.self";s:81:"Aumenta em #{value}% a sua chance de achar Páginas Perdidas no final da batalha
+";s:38:"fixed_effects.grimoire_find.buff.enemy";s:88:"Aumenta em #{value}% a chance de achar Páginas Perdidas do inimigo no final da batalha
+";s:39:"fixed_effects.grimoire_find.debuff.self";s:81:"Diminui em #{value}% a sua chance de achar Páginas Perdidas no final da batalha
+";s:40:"fixed_effects.grimoire_find.debuff.enemy";s:88:"Diminui em #{value}% a chance de achar Páginas Perdidas do inimigo no final da batalha
+";s:42:"fixed_effects.damage_in_bleeding.buff.self";s:61:"Aumenta em #{value} o seu dano causado em inimigos Sangrando
+";s:43:"fixed_effects.damage_in_bleeding.buff.enemy";s:79:"Aumenta em #{value} o dano do inimigo causado enquanto você estiver Sangrando
+";s:44:"fixed_effects.damage_in_bleeding.debuff.self";s:61:"Diminui em #{value} o seu dano causado em inimigos Sangrando
+";s:45:"fixed_effects.damage_in_bleeding.debuff.enemy";s:79:"Diminui em #{value} o dano do inimigo causado enquanto você estiver Sangrando
+";s:42:"fixed_effects.damage_in_slowness.buff.self";s:58:"Aumenta em #{value} o seu dano causado em inimigos Lentos
+";s:43:"fixed_effects.damage_in_slowness.buff.enemy";s:75:"Aumenta em #{value} o dano do inimigo causado enquanto você estiver Lento
+";s:44:"fixed_effects.damage_in_slowness.debuff.self";s:58:"Diminui em #{value} o seu dano causado em inimigos Lentos
+";s:45:"fixed_effects.damage_in_slowness.debuff.enemy";s:77:"Diminui em #{value} o dano causado pelo inimigo enquanto você estiver Lento
+";s:43:"fixed_effects.damage_in_confusion.buff.self";s:60:"Aumenta em #{value} o seu dano causado em inimigos Confusos
+";s:44:"fixed_effects.damage_in_confusion.buff.enemy";s:77:"Aumenta em #{value} o dano do inimigo causado enquanto você estiver Confuso
+";s:45:"fixed_effects.damage_in_confusion.debuff.self";s:60:"Diminui em #{value} o seu dano causado em inimigos Confusos
+";s:46:"fixed_effects.damage_in_confusion.debuff.enemy";s:77:"Diminui em #{value} o dano do inimigo causado enquanto você estiver Confuso
+";s:38:"fixed_effects.damage_in_stun.buff.self";s:62:"Aumenta em #{value} o seu dano causado em inimigos Atordoados
+";s:39:"fixed_effects.damage_in_stun.buff.enemy";s:79:"Aumenta em #{value} o dano do inimigo causado enquanto você estiver Atordoado
+";s:40:"fixed_effects.damage_in_stun.debuff.self";s:63:"
+Diminui em #{value} o seu dano causado em inimigos Atordoados
+";s:41:"fixed_effects.damage_in_stun.debuff.enemy";s:79:"Diminui em #{value} o dano do inimigo causado enquanto você estiver Atordoado
+";s:45:"fixed_effects.generic_attack_damage.buff.self";s:53:"Aumenta em #{value} o dano de seus Golpes Genéricos
+";s:46:"fixed_effects.generic_attack_damage.buff.enemy";s:60:"Aumenta em #{value} o dano dos Golpes Genéricos do inimigo
+";s:47:"fixed_effects.generic_attack_damage.debuff.self";s:53:"Diminui em #{value} o dano de seus Golpes Genéricos
+";s:48:"fixed_effects.generic_attack_damage.debuff.enemy";s:60:"Diminui em #{value} o dano dos Golpes Genéricos do inimigo
+";s:44:"fixed_effects.unique_attack_damage.buff.self";s:50:"Aumenta em #{value} o dano de seus Golpes Únicos
+";s:45:"fixed_effects.unique_attack_damage.buff.enemy";s:57:"Aumenta em #{value} o dano dos Golpes Únicos do inimigo
+";s:46:"fixed_effects.unique_attack_damage.debuff.self";s:50:"Diminui em #{value} o dano de seus Golpes Únicos
+";s:47:"fixed_effects.unique_attack_damage.debuff.enemy";s:57:"Diminui em #{value} o dano dos Golpes Únicos do inimigo
+";s:40:"fixed_effects.attack_half_life.buff.self";s:81:"Aumenta em #{value} o seu Ataque enquanto você estiver com menos de 50% de vida
+";s:41:"fixed_effects.attack_half_life.buff.enemy";s:86:"Aumenta em #{value} o Ataque do inimigo enquanto ele estiver com menos de 50% de vida
+";s:42:"fixed_effects.attack_half_life.debuff.self";s:81:"Diminui em #{value} o seu Ataque enquanto você estiver com menos de 50% de vida
+";s:43:"fixed_effects.attack_half_life.debuff.enemy";s:86:"Diminui em #{value} o Ataque do inimigo enquanto ele estiver com menos de 50% de vida
+";s:41:"fixed_effects.defense_half_life.buff.self";s:81:"Aumenta em #{value} a sua Defesa enquanto você estiver com menos de 50% de vida
+";s:42:"fixed_effects.defense_half_life.buff.enemy";s:86:"Aumenta em #{value} a Defesa do inimigo enquanto ele estiver com menos de 50% de vida
+";s:43:"fixed_effects.defense_half_life.debuff.self";s:81:"Diminui em #{value} a sua Defesa enquanto você estiver com menos de 50% de vida
+";s:44:"fixed_effects.defense_half_life.debuff.enemy";s:86:"Diminui em #{value} a Defesa do inimigo enquanto ele estiver com menos de 50% de vida
+";s:41:"fixed_effects.bonus_stamina_max.buff.self";s:44:"Aumenta em  #{value} o total de sua Stamina
+";s:42:"fixed_effects.bonus_stamina_max.buff.enemy";s:44:"Aumenta em  #{value} o total de sua Stamina
+";s:43:"fixed_effects.bonus_stamina_max.debuff.self";s:44:"Aumenta em  #{value} o total de sua Stamina
+";s:44:"fixed_effects.bonus_stamina_max.debuff.enemy";s:44:"Aumenta em  #{value} o total de sua Stamina
+";s:38:"fixed_effects.next_turn_mana.buff.self";s:59:"Ao pular o turno #{value} de chance de recuperar 1 de Mana
+";s:39:"fixed_effects.next_turn_mana.buff.enemy";s:74:"Ao pular o turno #{value} de chance de recuperar 1 de Mana do seu inimigo
+";s:40:"fixed_effects.next_turn_mana.debuff.self";s:56:"Ao pular o turno #{value} de chance de gastar 1 de Mana
+";s:41:"fixed_effects.next_turn_mana.debuff.enemy";s:71:"Ao pular o turno #{value} de chance de gastar 1 de Mana do seu inimigo
+";s:38:"fixed_effects.mana_half_life.buff.self";s:83:"Quando sua mana estiver abaixo da metade você tem #{value} de recuperar 1 de mana
+";s:39:"fixed_effects.mana_half_life.buff.enemy";s:90:"Quando a mana do inimigo estiver abaixo da metade ele tem #{value} de recuperar 1 de mana
+";s:40:"fixed_effects.mana_half_life.debuff.self";s:80:"Quando sua mana estiver abaixo da metade você tem #{value} de gastar 1 de mana
+";s:41:"fixed_effects.mana_half_life.debuff.enemy";s:87:"Quando a mana do inimigo estiver abaixo da metade ele tem #{value} de gastar 1 de mana
+";s:46:"fixed_effects.reduce_critical_damage.buff.self";s:61:"Chance de #{value}% de cortar pela metade o seu dano critico
+";s:47:"fixed_effects.reduce_critical_damage.buff.enemy";s:73:"Chance de #{value}% de cortar pela metade o dano critico do seu oponente
+";s:48:"fixed_effects.reduce_critical_damage.debuff.self";s:61:"Chance de #{value}% de cortar pela metade o seu dano critico
+";s:49:"fixed_effects.reduce_critical_damage.debuff.enemy";s:73:"Chance de #{value}% de cortar pela metade o dano critico do seu oponente
+";s:46:"fixed_effects.enemy_absorb_reduction.buff.self";s:59:"Chance de #{value}% de cortar pela metade o Dano Absorvido
+";s:47:"fixed_effects.enemy_absorb_reduction.buff.enemy";s:75:"Chance de #{value}% de cortar pela metade o Dano Absorvido do seu oponente
+";s:48:"fixed_effects.enemy_absorb_reduction.debuff.self";s:59:"Chance de #{value}% de cortar pela metade o Dano Absorvido
+";s:49:"fixed_effects.enemy_absorb_reduction.debuff.enemy";s:75:"Chance de #{value}% de cortar pela metade o Dano Absorvido do seu oponente
+";s:45:"fixed_effects.low_technique_no_cost.buff.self";s:69:"Chance de #{value}% de golpes de até 3 de mana não consumirem mana
+";s:46:"fixed_effects.low_technique_no_cost.buff.enemy";s:82:"Chance de #{value}% dos golpes do oponente de até 3 de mana não consumirem mana
+";s:47:"fixed_effects.low_technique_no_cost.debuff.self";s:69:"Chance de #{value}% de golpes de até 3 de mana não consumirem mana
+";s:48:"fixed_effects.low_technique_no_cost.debuff.enemy";s:82:"Chance de #{value}% dos golpes do oponente de até 3 de mana não consumirem mana
+";s:49:"fixed_effects.mid_technique_no_cooldown.buff.self";s:65:"Chance de #{value}% de golpes com 4 a 7 não entrarem em Recarga
+";s:50:"fixed_effects.mid_technique_no_cooldown.buff.enemy";s:78:"Chance de #{value}% dos golpes do oponente com 4 a 7 não entrarem em Recarga
+";s:51:"fixed_effects.mid_technique_no_cooldown.debuff.self";s:65:"Chance de #{value}% de golpes com 4 a 7 não entrarem em Recarga
+";s:52:"fixed_effects.mid_technique_no_cooldown.debuff.enemy";s:78:"Chance de #{value}% dos golpes do oponente com 4 a 7 não entrarem em Recarga
+";s:48:"fixed_effects.high_technique_half_cost.buff.self";s:80:"Chance de #{value}% de golpes com 8 ou mais de mana gastarem apenas 50% da mana
+";s:49:"fixed_effects.high_technique_half_cost.buff.enemy";s:93:"Chance de #{value}% dos golpes do oponente com 8 ou mais de mana gastarem apenas 50% da mana
+";s:50:"fixed_effects.high_technique_half_cost.debuff.self";s:80:"Chance de #{value}% de golpes com 8 ou mais de mana gastarem apenas 50% da mana
+";s:51:"fixed_effects.high_technique_half_cost.debuff.enemy";s:93:"Chance de #{value}% dos golpes do oponente com 8 ou mais de mana gastarem apenas 50% da mana
+";s:38:"fixed_effects.next_turn_life.buff.self";s:61:"Ao pular o turno #{value}% de chance de recuperar 50 de Vida
+";s:39:"fixed_effects.next_turn_life.buff.enemy";s:77:"Ao pular o turno #{value}% de chance de recuperar 50 de Vida do seu oponente
+";s:40:"fixed_effects.next_turn_life.debuff.self";s:61:"Ao pular o turno #{value}% de chance de recuperar 50 de Vida
+";s:41:"fixed_effects.next_turn_life.debuff.enemy";s:77:"Ao pular o turno #{value}% de chance de recuperar 50 de Vida do seu oponente
+";s:52:"fixed_effects.damage_increase_in_confusion.buff.self";s:80:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Confuso
+";s:53:"fixed_effects.damage_increase_in_confusion.buff.enemy";s:80:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Confuso
+";s:54:"fixed_effects.damage_increase_in_confusion.debuff.self";s:80:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Confuso
+";s:55:"fixed_effects.damage_increase_in_confusion.debuff.enemy";s:80:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Confuso
+";s:51:"fixed_effects.damage_increase_in_slowness.buff.self";s:78:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Lento
+";s:52:"fixed_effects.damage_increase_in_slowness.buff.enemy";s:78:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Lento
+";s:53:"fixed_effects.damage_increase_in_slowness.debuff.self";s:78:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Lento
+";s:54:"fixed_effects.damage_increase_in_slowness.debuff.enemy";s:78:"Chance de #{value}% de aumentar o dano em 25% quando o oponente estiver Lento
+";s:41:"fixed_effects.kill_with_one_hit.buff.self";s:47:"Chance de #{value}% de se matar com esse golpe
+";s:42:"fixed_effects.kill_with_one_hit.buff.enemy";s:47:"Chance de #{value}% de se matar com esse golpe
+";s:43:"fixed_effects.kill_with_one_hit.debuff.self";s:54:"Chance de #{value}% de matar o inimigo com esse golpe
+";s:44:"fixed_effects.kill_with_one_hit.debuff.enemy";s:54:"Chance de #{value}% de matar o inimigo com esse golpe
+";s:47:"fixed_effects.half_weak_damage_chance.buff.self";s:74:"Chance de #{value}% de diminuir pela metade o dano de golpes com fraqueza
+";s:48:"fixed_effects.half_weak_damage_chance.buff.enemy";s:74:"Chance de #{value}% de diminuir pela metade o dano de golpes com fraqueza
+";s:49:"fixed_effects.half_weak_damage_chance.debuff.self";s:74:"Chance de #{value}% de diminuir pela metade o dano de golpes com fraqueza
+";s:50:"fixed_effects.half_weak_damage_chance.debuff.enemy";s:74:"Chance de #{value}% de diminuir pela metade o dano de golpes com fraqueza
+";s:42:"fixed_effects.bonus_stamina_heal.buff.self";s:52:"Aumenta em  #{value} a recuperação de sua Stamina
+";s:43:"fixed_effects.bonus_stamina_heal.buff.enemy";s:52:"Aumenta em  #{value} a recuperação de sua Stamina
+";s:44:"fixed_effects.bonus_stamina_heal.debuff.self";s:52:"Aumenta em  #{value} a recuperação de sua Stamina
+";s:45:"fixed_effects.bonus_stamina_heal.debuff.enemy";s:52:"Aumenta em  #{value} a recuperação de sua Stamina
+";s:42:"fixed_effects.no_consume_stamina.buff.self";s:64:"Chance de #{value} de batalhas npcs não consumirem sua Stamina
+";s:43:"fixed_effects.no_consume_stamina.buff.enemy";s:64:"Chance de #{value} de batalhas npcs não consumirem sua Stamina
+";s:44:"fixed_effects.no_consume_stamina.debuff.self";s:64:"Chance de #{value} de batalhas npcs não consumirem sua Stamina
+";s:45:"fixed_effects.no_consume_stamina.debuff.enemy";s:64:"Chance de #{value} de batalhas npcs não consumirem sua Stamina
+";s:42:"fixed_effects.bonus_gold_mission.buff.self";s:56:"Aumenta em #{value} o Ouro das recompensas das missões
+";s:43:"fixed_effects.bonus_gold_mission.buff.enemy";s:56:"Aumenta em #{value} o Ouro das recompensas das missões
+";s:44:"fixed_effects.bonus_gold_mission.debuff.self";s:56:"Aumenta em #{value} o Ouro das recompensas das missões
+";s:45:"fixed_effects.bonus_gold_mission.debuff.enemy";s:56:"Aumenta em #{value} o Ouro das recompensas das missões
+";s:41:"fixed_effects.bonus_exp_mission.buff.self";s:64:"Aumenta em #{value} a Experiência das recompensas das missões
+";s:42:"fixed_effects.bonus_exp_mission.buff.enemy";s:64:"Aumenta em #{value} a Experiência das recompensas das missões
+";s:43:"fixed_effects.bonus_exp_mission.debuff.self";s:64:"Aumenta em #{value} a Experiência das recompensas das missões
+";s:44:"fixed_effects.bonus_exp_mission.debuff.enemy";s:64:"Aumenta em #{value} a Experiência das recompensas das missões
+";s:39:"fixed_effects.generic_defense.buff.self";s:44:"Aumenta as Técnicas Defensivas em #{value}
+";s:40:"fixed_effects.generic_defense.buff.enemy";s:56:"Aumenta as Técnicas Defensivas em #{value} do oponente
+";s:41:"fixed_effects.generic_defense.debuff.self";s:44:"Diminui as Técnicas Defensivas em #{value}
+";s:42:"fixed_effects.generic_defense.debuff.enemy";s:56:"Diminui as Técnicas Defensivas em #{value} do oponente
+";s:48:"fixed_effects.increase_bleeding_damage.buff.self";s:62:"Aumenta o efeito de Sangramento do seu personagem em #{value}
+";s:49:"fixed_effects.increase_bleeding_damage.buff.enemy";s:56:"Aumenta o efeito de Sangramento do oponente em #{value}
+";s:50:"fixed_effects.increase_bleeding_damage.debuff.self";s:62:"Diminui o efeito de Sangramento do seu personagem em #{value}
+";s:51:"fixed_effects.increase_bleeding_damage.debuff.enemy";s:56:"Diminui o efeito de Sangramento do oponente em #{value}
+";s:48:"fixed_effects.increase_slowness_damage.buff.self";s:60:"Aumenta o efeito de Lentidão do seu personagem em #{value}
+";s:49:"fixed_effects.increase_slowness_damage.buff.enemy";s:54:"Aumenta o efeito de Lentidão do oponente em #{value}
+";s:50:"fixed_effects.increase_slowness_damage.debuff.self";s:60:"Diminui o efeito de Lentidão do seu personagem em #{value}
+";s:51:"fixed_effects.increase_slowness_damage.debuff.enemy";s:54:"Diminui o efeito de Lentidão do oponente em #{value}
+";s:49:"fixed_effects.increase_confusion_damage.buff.self";s:60:"Aumenta o efeito de Confusão do seu personagem em #{value}
+";s:50:"fixed_effects.increase_confusion_damage.buff.enemy";s:54:"Aumenta o efeito de Confusão do oponente em #{value}
+";s:51:"fixed_effects.increase_confusion_damage.debuff.self";s:60:"Diminui o efeito de Confusão do seu personagem em #{value}
+";s:52:"fixed_effects.increase_confusion_damage.debuff.enemy";s:54:"Diminui o efeito de Confusão do oponente em #{value}
+";s:33:"fixed_effects.pets_find.buff.self";s:53:"Aumenta a chance em  #{value}% de encontrar mascotes
+";s:34:"fixed_effects.pets_find.buff.enemy";s:53:"Aumenta a chance em  #{value}% de encontrar mascotes
+";s:35:"fixed_effects.pets_find.debuff.self";s:53:"Diminui a chance em  #{value}% de encontrar mascotes
+";s:36:"fixed_effects.pets_find.debuff.enemy";s:53:"Diminui a chance em  #{value}% de encontrar mascotes
+";s:36:"fixed_effects.steal_health.buff.self";s:43:"Recupera #{value}% de vida do dano causado
+";s:37:"fixed_effects.steal_health.buff.enemy";s:43:"Recupera #{value}% de vida do dano causado
+";s:38:"fixed_effects.steal_health.debuff.self";s:40:"Gasta #{value}% de vida do dano causado
+";s:39:"fixed_effects.steal_health.debuff.enemy";s:39:"Gasta #{value}% de vida do dano causado";}}
